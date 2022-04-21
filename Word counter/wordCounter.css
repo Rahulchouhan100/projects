@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   padding:50px 100px;
+}
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    color: white;
+    padding: 10px;
+    margin-bottom: 6px;
+
+}
+#textbox{
+    width: 100%;
+    border-color: rgb(14, 120, 120);
+    font-size: 15px;
+}
+p{
+    text-align: center;
+    background-color: rgb(147, 111, 111);
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 800;
+}
