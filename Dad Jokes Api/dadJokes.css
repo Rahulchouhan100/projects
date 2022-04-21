@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+     /* border: 1px solid red; */
+}
+main{
+    background-color: rgb(8, 80, 80);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: aliceblue;
+  text-align: center;
+}
+.box h3{
+  color: gray;
+  letter-spacing: 1.5px;
+  padding: 30px;
+}
+#btn{
+margin-top: 10px;
+
+  
+}
+#jokes{
+  padding: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  height: 50%;
+}
+button{
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  color: white;
+  background-color: blueviolet;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+button:hover{
+  background-color: rgb(123, 10, 228);
+}
