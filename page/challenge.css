@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+    /* border: 1px solid red; */
+}
+:root{
+    --bg-clr:#ebfbff;
+    --bg-pink: #ff52bf;
+    --footer-bg:#00252e;
+}
+html{
+    font-size: 62.5%;
+}
+.uni-padding{
+    padding :4rem 8%
+}
+.main-padding{
+    padding: 6rem 12%;
+}
+/* navbar start  */
+header{
+    background-color: var(--bg-clr);
+    
+}
+nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+nav img{
+    width: 20rem;
+}
+nav button{
+    padding: .5rem 4rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    cursor: pointer;
+    transition: transform .2s;
+    color: #111 !important;
+    margin: 0;
+}
+button:hover{
+    transform: scale(1.1);
+}
+/* navbar end  */
+/* hero section start  */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    
+
+}
+/* hero left section start  */
+.hero-left h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+.hero-left p{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    word-spacing: .2rem;
+}
+button{
+    margin-top: 1.8rem;
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    background-color: var(--bg-pink);
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+/* hero left section end  */
+/* hero right section start  */
+.hero-right img{
+    width: 50rem;  
+}
+
+/* hero right section end  */
+/* hero section end  */
+
+/* main box start  */
+main{
+    margin: 5rem 0;
+}
+.f-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 4rem 5%;
+    gap: 5rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+.left-sec{
+    flex-basis: 50%;
+
+}
+.left-sec h4{
+    font-size: 2.8rem;
+}
+.left-sec p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.right-sec{
+    flex-basis: 40%;
+
+}
+.right-sec img{
+    width: 25rem;
+}
+/* main box end  */
+
+.build-community{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+.build-community h4{
+    font-size: 2rem;
+}
+
+/* footer section start  */
+footer{
+    background-color: #414242;
+    color: #fff;
+    
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.footer-section div:nth-child(1) img{
+    margin: 2rem 0;
+    width: 17rem;
+}
+ion-icon{
+    font-size: 2vw;
+    color: #fff;
+    padding-right: .8rem;
+}
+ul li {
+    list-style: none;
+    padding: .7rem 0;
+}
+.social-icon{
+    font-size: 4vw;
+    padding-right: 1.5rem;
+}
+
+
+
+/* footer section end  */
+/* media queries start  */
+@media only screen and (min-width:903px) and (max-width:1159px){
+    html{
+        font-size: 45%;
+    }
+}
+@media only screen and (min-width:700px) and (max-width:903px){
+    html{
+        font-size: 35%;
+    }
+}
+@media only screen and (max-width:700px){
+    nav img{
+        width: 10rem;
+    }
+    nav button{
+        font-size: 1rem;
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-right img{
+        width: 100%;  
+    }
+    .f-box{
+        flex-direction: column;
+    }
+    .right-sec img{
+        width: 100%;
+        height: auto;
+    }
+    .build-community{
+        width: 100%;
+    }
+    .build-community h4{
+        font-size: 4vw;
+    }
+    section{
+        padding: 0 8%;
+    }
+    footer{
+        font-size: 2rem;
+    }
+    .footer-section{
+        font-size: 1rem;
+    }
+    .footer-section div:nth-child(1) img{
+        width: 10rem;
+    }
+    ion-icon{
+        font-size: 1.5rem;
+        
+    }
+    .social-icon{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:599px){
+    .f-box{
+        width: 80%;
+        margin: 5rem 5rem;
+    }
+    .footer-section{
+        font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width:500px){
+    .footer-section{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .footer-section div{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+}
+/* media quries end  */
